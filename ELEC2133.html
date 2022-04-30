@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<meta name="keywords" content="ELEC2133,UNSW,Analogue Electronics,Opamp,Filters,BJT,MOSFET">
+	<meta name="author" content="Chayut Orapinpatipat">	
+	<meta name="description" content="Chayut Orapinpatipat's ELEC2133 Analogue electronics Note" />
+	<title>ELEC2133 Analogue Electronics Note</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+  <h1>UNSW ELEC2133 Analogue Electronics Essentials</h1>
+
+  <h2>BJT</h2>
+
+  $$ I_C = \beta I_B $$
+  $$ I_E = I_C + I_B $$
+
+
+  Common assumptions: 
+  $$ V_{be} = 0.6 - 0.7 V $$
+
+  <h3>hybrid-Pi model</h3>
+
+  <center><img src="res/BJT_small_signal.png" alt="BJT_small_signal" style="width:304px;height:190px;"></center>
+
+  $$ g_m = \frac{I_{CQ}}{V_T} $$
+  $$ r_\pi = \frac{g_m}{\beta}  \, (= \frac{1}{g_\pi} )  $$
+  $$ r_o = \frac{|V_A|}{I_C} $$
+
+  \(V_A\): Early voltage (~ 50 to 100 V) <br>
+  \(V_T\): 26 mV  (at 300K)
+
+  <h2>MOSFET</h2>
+
+  
+  
+  <br><br><br><br><br>
+  <hr>
+ 
+  <a href="/index.html">Home</a><br><br>
+
+  <br>
+  <hr>
+  Q2hheXV0T3JhcGlucGF0aXBhdA==
+  <hr>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63903076-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>

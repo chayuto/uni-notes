@@ -1,0 +1,244 @@
+<html>
+
+<head>
+<meta name="keywords" content="H64SEN,UoN,University of Notthingham,Electrical Machine,Chayut Orapinpatipat,Q2hheXV0T3JhcGlucGF0aXBhdA==">
+	<meta name="author" content="Chayut Orapinpatipat">	
+	<meta name="description" content="Chayut Orapinpatipat's H64SEN BioSensing" />
+	<title>UoN H64SEN BioSensing Note</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!--
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+   \( \)
+-->
+
+</head>
+
+<body>
+  <h1>University of Nottingham H64SEN BioSensing Note</h1> <br><br>
+
+  <hr>
+  <h2>Lecture 1</h2>
+
+  <p>Sensitivity
+  <p>Resolution
+  <p>Accuracy, measurement vs True Value, use average to resolve
+  <p>Precision, (range/standard Dev), use calibration to offset
+  <p>Limit of Detection (LoD) \(\frac{3 \sigma}{m}\)
+  <p>Limit of Quantification (LoQ) \(\frac{10 \sigma}{m}\)
+
+  <p> \( \sigma = \frac{\sqrt{(x_i - m)^2 }}{ n - 1  }   \)
+
+
+  <hr>
+  <h2>Lecture 2</h2>
+
+  <p>History of Biosensors
+  <p>Biosensor classification 
+   
+      Bio-receptor
+  <ul>
+    <li>Antibody/antigen Interactions</li>
+    <li>Enzymatic Interactions</li>
+    <li>Nucleic acid Interactions</li>
+    Cells
+  </ul>
+    Receptor/transducer interface
+
+  <ul>
+    <li>Receptor deposition Spin coating</li>
+    <li>Dip coating</li>
+    <li>Sputtering </li>
+    <li>Printing (ink jet, cantilever)</li>
+    <li>Electrostatic self assembly or Layer-by-layer </li>
+    <li>Molecular imprinting</li>
+    <li>Sol-gel technique (entrapment)</li>
+  </ul>
+    Chemical interaction
+    Covalent
+    Non-covalent
+    Electrostatic
+    p-p interaction
+    Van der Waals forces
+    Hydrophobic
+    Functional groups
+
+
+  <hr>
+  <h2>Lecture 3: Binding and kinetics, Optical Biosensors</h2> 
+
+  <h3> Binding and kinetics </h3>
+
+  <p> \(K_B = \frac{k_{on}}{k_{off}}\)
+
+  <p> Determining \(K_B\)
+  <ul>
+      <li> </li> 
+      <li> Determine the concentration of ligand at which we get the half maximal concentration of [AB].</li>
+      <li> Plot [A]/y versus [A] we should get a straight line and our intercept on the y-axis </li>
+  </ul>
+
+  <p> Cooperativity, present of one binding event can help or hinder the next. 
+
+  <h3>Optical Biosensors </h3>
+
+  <p> Basic principles of light
+  <ul>
+    <li>Absorption</li> 
+    <li>Scattering (Reflection/refraction)</li> 
+    <li>Fluorescence (emission)</li> 
+  </ul>
+
+  <p> Leser
+
+  <p> Photo detectors 
+  <ul>
+    <li>p-n junction photodiodes</li> 
+    <ul>
+      <li>non-linear function</li>
+      <li>slow, but low noise (no leakage current)</li>
+      <li>Large area, pwoer efficient</li>
+      <li>small area, limited BW</li>
+    </ul>
+    <li>Avalanche photodiodes (APDs) </li>
+    <ul>
+      <li>One photon 10-100 e-h pairs</li>
+      <li>Multiplication: (M= 10 ~ 500)</li>
+    </ul>
+    <li>Metal-Semiconductor-Metal detector</li> 
+    <li>charge-coupled device</li>
+    <ul>
+      <li>measure capacitance</li>
+      <li>time integration</li>
+    </ul>
+    <li>Photoresistor</li>
+    <li>Photo multiplying tubes</li>
+    <li>Photoresistor</li>
+  </ul>
+
+
+
+  <hr>
+  <h2>Lecture 4, waveguide based biosensor</h2>
+
+  Reflective Index, n = c/v <br>
+
+  Snell's law :  \( \sin{\theta_{1}} n_1 = \sin{\theta_{2}} n_2 \) <br>
+
+  Optical Fibre Classification
+  <ul>
+    <li>Extrinsic Sensors: to guide light/collect light</li>
+    <ul>
+      <li>Absorbance</li>
+      <li>Reflectance</li>
+      <li>Fluorescence</li>
+    </ul>
+    <li>Intrinsic Sensors: light property changes take place in OF</li>
+    <ul>
+      <li>Evanescent wave</li>
+      <ul>
+        <li>remove cladding of the OF</li>
+        <li>change in absorbtion by lambert law</li>
+        <li>\(I = I_0 e^{- \alpha c l }\)</li>
+      </ul>
+      
+      <li>Grated Fibres</li>
+      <ul>
+        <li>Long period Grating (LPG) (10~100 um) by UV light</li>
+        <li>Measure change in peak frequency</li>
+        <li>No structure modification</li>
+      </ul>
+      <li>tapered</li>
+      <ul>
+        <li>Heated and streched OF, creating smaller waveguide</li>
+        <li>make OF more fragile</li>
+        <li>higher wave number, higher TM mode, evanescent field</li>
+        <li>Higher mode , higher sensitivity </li>
+        <li>Measure change in peak frequency</li>
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <hr>
+  <h2>Lecture 5, SPR Biosensors</h2>
+
+  <h3>Configurations</h3>
+   <ul>
+      <li>Grating Configuration</li>
+      <ul>
+        <li>photons may interact with the sample</li>
+        <li>Not much in use</li>
+      </ul>
+      <li>Otto configuration</li>
+      <li>Kretschmann Configuration</li>
+      <ul>
+        <li>use prism</li>
+        <li>no airgap</li>
+        <li>most practical use </li>
+      </ul>
+  </ul>
+
+  <h3>SPR sensitivity</h3>
+
+  <p>  \( S_{RI} = \frac{\delta Y}{\delta n_{ef}} \frac{\delta n_{ef}}{\delta n_{d}} \)
+  
+  <p> \( \frac{\delta Y}{\delta n_{ef}}  = \text{machine performance}\)
+  <p> \( \frac{\delta n_{ef} }{\delta n_{d}}  = \text{test efficiency (e.g. binding)} \)
+
+
+
+  <hr> 
+  <h2>Tutorial Question 1</h2>
+
+  <hr>
+  <h2>Tutorial Question 2</h2>
+
+  <p> Determine optical thickness of the layer deposited onto LPG fibre with the RI sensitivity of 100 nm/RIU if at the deposition the  of 10 layers the wavelength shift of 20 nm was observed. Assuming the uniform film deposition and the thickness of 1 layer is 5nm and starting RI is 1.5.
+
+  <p> Optical density = \( n \cdot d \), where n = RI and d = Thickness
+
+  <p> d = 10 x 5 nm = 50 nm
+  <p> \(\delta RI = \frac{20\,nm}{100\,nm/RIU} = 0.2 \, RIU\)
+  <p> total RI = 1.5 + 0.2 = 1.7 
+  <p> Therefore, optical thickness = \( n \cdot d \) = 85 nm
+  
+<!--
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+   \( \)
+-->
+ 
+  <hr>
+  <a href="/index.html">Home</a><br><br>
+
+  <br>
+  <hr>
+  Q2hheXV0T3JhcGlucGF0aXBhdA==
+  <hr>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63903076-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<html>
+
+<head>
+<meta name="keywords" content="3115,Electromagnetic,Engineering,UNSW,JavaScript">
+	<meta name="author" content="Chayut Orapinpatipat">	
+	<meta name="description" content="Chayut Orapinpatipat's UNSW ELEC3115 Electromagnetic Note " />
+	<title>ELEC3115 Electromagnetic</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+</head>
+
+<body>
+
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center
+  }
+  th, td {
+      padding: 2 px;
+  }
+  </style>
+
+  <h1>ELEC3115 Electromagnatic Engineering UNSW</h1>
+
+  <h2>Part A</h2>
+
+  <h3> Potential </h3>
+
+  Assuming gaussian sphere and charge Q 
+
+  $$ V = \frac{W}{q} = -\int_{a}^{b} \vec{E} \cdot d \vec{l }= {q \over 4 \pi \epsilon_0  R } = {1 \over 4 \pi \epsilon_0 } \int \frac{\rho_v}{R} \, dv = {1 \over 4 \pi \epsilon_0 } \int \frac{\rho_s}{R} \, ds $$
+
+  <h3> Capacitance </h3>
+  $$  C = \frac{Q}{V} $$
+
+  
+  <table style="width:75%" align="center">
+    <tr>
+      <td>Parallel Plate</td>
+      <td>$$ C = {\epsilon S \over d } $$</td>    
+      
+    </tr>
+
+    <tr>
+      <td>Coaxial Cable</td>
+      <td>$$ C = {{2\pi\epsilon} \over {\ln{b \over a }}} $$</td>    
+      
+    </tr>
+    <tr>
+      <td>Parallel wires</td>
+      <td>$$ C = {{\pi\epsilon} \over {\ln{ b-a \over a }}} $$</td>    
+      
+    </tr>
+  </table>
+
+
+  <br>
+  Electron velocity 
+  $$ u = \mu E  \text{ (m/sec) where } \mu  \text{ is electron mobility} $$
+
+  <h3>Magnetic</h3>
+ 
+  Flux Linkage in linear media 
+  $$L = {\lambda \over I } = \frac{N^2}{\mathfrak{R}}$$
+
+  Energy 
+  $$W_m = \frac{1}{2}L I^2= \frac{1}{2}\lambda I $$
+
+
+  <h3> Flux in current carrying conductor </h3> 
+
+  for internal flux
+
+  $$ B_{int} = \frac{\mu_0 r }{2 \pi b^2 } I $$ 
+
+  for external flux 
+
+  $$ B_{ext} = \frac{\mu_0 I }{ 2 \pi r} $$ 
+
+  <h3>Inductance of current carrying conductor </h3>
+
+
+  Turn, N, equivalent
+
+  $$ N = \frac{2r \,dr}{a^2} $$ 
+
+  Flux linkage
+
+  $$ d\lambda = \frac{2 r \,dr}{a^2} ( \frac{\mu_0 I}{2 \pi a^2} (a^2 - r^2) + \frac{\mu_0 I}{2 \pi} \ln \frac{b}{a}) $$
+
+
+  Inductance for coaxial wire
+
+  $$ L = \frac{\mu_0}{8 \pi} + \frac{\mu_0}{2\pi}\ln \frac{b}{a } $$
+
+  Inductance for parallel wire
+
+  $$ L = \frac{\mu_0}{4\pi} + \frac{\mu_0}{\pi}\ln \frac{b}{a } $$
+
+  <h3>Force </h3>
+
+  $$ F = BIL \sin \phi $$ 
+
+  $$ V = Blu \sin \phi $$
+
+
+
+  <h3> Tricks </h3>
+
+  In spherical coordinate, if \(\theta\) and  \(\phi\) are not restricted
+
+    $$dv = R^2 \sin{\theta} \, d\theta d\phi dR = 4\pi R^2 dR $$
+
+  <hr>
+  <h2>Part B</h2>
+
+  $$ Z_0= \sqrt{L \over C} $$
+  
+
+  <h3>Phase Velocity<h3>
+    $$V_p = {\omega \over \beta} = {1 \over \sqrt{\mu\epsilon}} = {1 \over \sqrt{LC}}$$
+
+  <h3>Refection Coefficient </h3>
+    $$\Gamma = {Z_L - Z_o\over Z_L + Z_o}$$
+
+  <h3>Power along the line</h3>
+  $$P_{av}(z) = {1\over2}{|V_o^+|^2 \over Z_o}(1 - |\Gamma|^2)$$
+
+  <h3>Return Loss</h3>
+  $$RL = -20 \log{\Gamma}$$
+
+  <h3>Standing Wave Ration</h3>
+  $$\text{VSWR} = {|V_\max| \over |V_\min|} = {{1 + |\Gamma|} \over {1 - |\Gamma|}}$$
+
+  <h3>Cut-off Number and Frequency </h3>
+
+  $$ k = \frac{2\pi}{\lambda} \qquad \beta = \sqrt{k^2 - k_c^2}  = k \sqrt{1 - (\frac{k_c}{k})^2} = k \sqrt{1 - (\frac{f_c}{f})^2}$$
+
+
+  $$f_{cmn} = \frac{k_{cmn}}{2\pi\sqrt{\epsilon\mu}} = \frac{1}{2\pi\sqrt{\epsilon\mu}} \sqrt{ (\frac{m\pi}{a})^2 + ( \frac{n\pi}{b})^2}    $$
+
+  <h3>Wave Impedance </h3>
+
+  $$Z_o = \sqrt{\mu_0\mu_r \over \epsilon_0\epsilon_r} = Z_{TEM}$$
+
+  $$Z_{TE} = \frac{Z_0}{\sqrt{1 - (\frac{\omega_c}{\omega})^2 }}$$
+  \(Z_{TE}\) always higher than \(Z_0\)
+
+  $$Z_{TM} = Z_0\sqrt{1 - (\frac{\omega_c}{\omega})^2}$$
+  \(Z_{TM}\) always lower than \(Z_0\)
+
+  <h3>Group Velocity</h3>
+
+  $$v_g = c\sqrt{1-(\frac{f_c}{f})^2}$$
+
+  <h3>Evanescent waves</h3>
+
+  $$\alpha_{bc} = \omega \sqrt{\mu\epsilon} \sqrt{(\frac{\omega_{cmn}}{\omega})^2 -1 } $$
+
+
+
+
+  <br><br><br><br><br>
+  <hr>
+  <a href="/index.html">Home</a><br><br>
+
+
+  Contact me if you wish to contribute to EE resource pages 
+  <br>
+  <hr>
+  Q2hheXV0T3JhcGlucGF0aXBhdA==
+  <hr>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63903076-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>
